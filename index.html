@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <title>Ajalugu</title>
+</head>
+<body>
+
+<div class="header">
+    <div class="container col-md-8">
+        <img src="ribbon.png" alt="ribbon" id="ribbon"/><br><br>
+        <img src="Imeline.png" alt="logo" id="logo"/><br><br>
+        <p>
+            Vali nende põnevate lugude seast välja enda lemmikud.<br>
+            Sinu ja teiste lugejate soovide põhjal paneme kokku ajakirja<br>
+            novembri numbri. Nii sünnib Eesti esimene lugejate poolt<br>
+            kokku pandud ajakiri, mille Sina võid saada endale tasuta!<br><br>
+        </p>
+        <img src="CTA.png" alt="lemmikartiklid" id="valik"><br><br><br>
+    </div>
+</div>
+
+<div class="container col-md-8" id="body">
+
+    <!--Popup-->
+
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modalTitle">Kampaania tingimused</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut
+                        laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                        tation
+                        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p>
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                        illum
+                        dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+                        praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                    </p>
+                    <p>
+                        Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
+                        placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui
+                        facit
+                        eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt
+                        saepius.
+                    </p>
+                    <p>
+                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est
+                        notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas
+                        humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur
+                        parum clari, fiant sollemnes in futurum.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <h2 style="color: #3f2916">Pane kokku omaenda Imeline Ajalugu</h2>
+    <p>Vali igast teemast kuni 3 artiklit Imelise Ajaloo novembri numbrisse. Tänutäheks saadame selle Sulle tasuta.<br>
+        Kui Sul endal on ajakiri juba tellitud, telli tasuta number heale sõbrale, kolleegile või sugulasele.</p>
+
+    <!--Akordionimenüü-->
+
+    <div class="accordion">Pingelised sündmused
+        <span style="float: right"><span id="count">0</span>/3</span></div>
+    <div class="panel" id="panel">
+        <div class="list-group justify-content-center">
+            <div class="form-check" style="padding: 10px">
+                <input type="checkbox" class="form-check-input" id="aaretejaht">
+                <label class="form-check-label" for="aaretejaht">
+                    <img src="thumb.png" style="float: left; padding-right: 10px" alt="Aaretejaht"><b>Aaretejaht</b><br>
+                    1820:Hispaanlased lastivad laeva aaretega, kuid see röövitakse ja aare peidetakse väiksele saarele.
+                    Tänapäeva aaretejahtija läheb seda otsima.
+                </label>
+            </div>
+            <div class="form-check" style="padding: 10px">
+                <input type="checkbox" class="form-check-input" id="purustavOrkaan">
+                <label class="form-check-label" for="purustavOrkaan">
+                    <img src="thumb2.png" style="float: left; padding-right: 10px" alt="Purustav orkaan"><b>Purustav
+                    orkaan</b><br>
+                    1900: Orkaan purustab Galvestoni linna. Katastroofis hukkub 8000 inimest ning see USA linn kaotab
+                    igaveseks oma jõukuse ja sära.
+                </label>
+            </div>
+            <div class="form-check" style="padding: 10px">
+                <input type="checkbox" class="form-check-input" id="hirmsaimLennukatastroof">
+                <label class="form-check-label" for="hirmsaimLennukatastroof">
+                    <img src="thumb3.png" style="float: left; padding-right: 10px" alt="Hirmsaim lennukatastroof"><b>Hirmsaim
+                    lennukatastroof</b><br>
+                    1977: Gran Canaria lennuväljal plahvatanud pommi tõttu suunatakse paljud lennud Tenerifele. Tekkinud
+                    segaduses juhtub ajaloo suurim lennuõnnetus.
+                </label>
+            </div>
+            <div class="form-check" style="padding: 10px">
+                <input type="checkbox" class="form-check-input" id="samuraideKättemaks">
+                <label class="form-check-label" for="samuraideKättemaks">
+                    <img src="thumb4.png" style="float: left; padding-right: 10px" alt="Samuraide kättemaks"><b>Samuraide
+                    kättemaks</b><br>
+                    1703: Noor mees sunnitakse enesetapule ning tema klanni samuraid peavad perekonna au taastama.
+                </label>
+            </div>
+            <div class="form-check" style="padding: 10px">
+                <input type="checkbox" class="form-check-input" id="projectAzorian">
+                <label class="form-check-label" for="projectAzorian">
+                    <img src="thumb5.png" style="float: left; padding-right: 10px" alt="Project Azorian"><b>Project
+                    Azorian</b><br>
+                    1968: Ootamatult upub nõukogude allveelaev K-129 tuumarakettidega pardal. Mõne aasta pärast alustab
+                    CIA vaenlase allveelaeva koopia ehitamist - algab projekt Azorian.
+                </label>
+            </div>
+            <div class="form-check" style="padding: 10px">
+                <input type="checkbox" class="form-check-input" id="viisÖöpäevaPõrgus">
+                <label class="form-check-label" for="viisÖöpäevaPõrgus">
+                    <img src="thumb6.png" style="float: left; padding-right: 10px" alt="Viis ööpeva põrgus"><b>Viis
+                    ööpäeva põrgus</b><br>
+                    1977: Palestiina terroristid kaaperdavad reisilennuki. Tund-tunnilt kustub reisijate lootus eluga
+                    pääseda. Lääne-Saksamaa saadab Somaaliasse teel olevale lennukile vastu eriüksuse.
+                </label>
+            </div>
+            <div class="form-check" style="padding: 10px">
+                <input type="checkbox" class="form-check-input" id="tuumakatastroofTšernobõlis">
+                <label class="form-check-label" for="tuumakatastroofTšernobõlis">
+                    <img src="thumb7.png" style="float: left; padding-right: 10px" alt="Tuumakatastroof Tšernobõlis"><b>Tuumakatastroof
+                    Tšernobõlis</b><br>
+                    1986: Suur osa Nõukogude Liidu elektrist tuleb tuumajaamadest, kuid nende ehitamisel on tehtud
+                    mitmeid vigu. 26. aprillil toimub Tšernobõli tuumajaamas plahvatus ning ajaloo suurim
+                    tuumakatastroof saab tõeks. </label>
+            </div>
+        </div>
+        <div class="wrapper" style="text-align: center">
+            <input type="image" id="next" src="btn.png" alt="järgmine teema"/>
+        </div>
+    </div>
+    <div class="accordion">Kuulsad teod
+        <span style="float: right"><span class="count">0</span>/3</span></div>
+    <div class="panel" id="panel2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
+        <div class="wrapper" style="text-align: center">
+            <input type="image" id="next1" src="btn.png" alt="järgmine teema"/>
+        </div>
+    </div>
+    <div class="accordion">Igapäevane elu
+        <span style="float: right"><span class="count">0</span>/3</span></div>
+    <div class="panel" id="panel3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
+        <div class="wrapper" style="text-align: center">
+            <input type="image" id="next2" src="btn.png" alt="järgmine teema"/>
+        </div>
+    </div>
+    <div class="accordion">Suured konfliktid
+        <span style="float: right"><span class="count">0</span>/3</span></div>
+    <div class="panel" id="panel4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
+    </div>
+    <div class="wrapper" style="text-align: center">
+        <input type="image" src="btn_valmis.png" onclick="" style="padding: 20px" alt="valmis"/>
+    </div>
+
+    <!--Footer-->
+
+    <div class="footer-top">
+        <div class="row">
+            <div class="col-md-6">
+                <p><a href="http://www.imelineajalugu.ee/" class="linkToHomepage">Imeline Ajalugu </a>on põhjamaade
+                    populaarseim ajalooajakiri,
+                    millel on Eestis üle 50 000 lugeja. Ajakiri ilmub kord kuus,
+                    igas numbris on põnevad ja rikkalikult illustreeritud lood ligi
+                    100 leheküljel. Imelist Ajalugu annab Eestis välja AS Äripäev
+                    alates 2011 aaasta sügisest.</p>
+            </div>
+            <div class="col-md-3" style="text-align: right">
+                <img src="covers.png" class="rounded" alt="covers"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-bottom">
+    <div class=" container col-md-9">
+        <a href="#modal" data-toggle="modal" data-target="#modal" class="link"> Tutvu kampaania tingimustega</a>
+        <br><br>
+        Klienditeeninduse e-post: <a href="mailto:register@imelineajalugu.ee"
+                                     class="link">register@imelineajalugu.ee</a>, tel: 667 0099 (tööpäeviti 9–17)
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
