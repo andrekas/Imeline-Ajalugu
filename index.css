@@ -28,7 +28,7 @@
 .header{
     width:100%;
     height:100%;
-    background-image: url("/source/bg2.png");
+    background-image: url("bg2.png");
     background-size: cover;
     overflow: visible;
 }
